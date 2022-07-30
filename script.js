@@ -17,17 +17,25 @@ function generateRobotAnswer() {
     return answersArray[Math.floor(Math.random() * 3)];
 }
 
+function setMyScore() {
+    myScoreCounter++;
+    myScore.innerHTML = myScoreCounter;
+}
+
+function setComputerScore() {
+    computerScoreCounter++;
+    computerScore.innerHTML = computerScoreCounter;
+}
+
 function myPaperAnswer() {
     let computerAnswer = generateRobotAnswer();
     computerChoice.innerHTML = computerAnswer;
     switch (computerAnswer) {
         case "rock":
-            myScoreCounter++;
-            myScore.innerHTML = myScoreCounter;
+            setMyScore();
             break;
         case "scissors":
-            computerScoreCounter++;
-            computerScore.innerHTML = computerScoreCounter;
+            setComputerScore();
             break;
     }
 }
@@ -37,12 +45,10 @@ function myScissorsAnswer() {
     computerChoice.innerHTML = computerAnswer;
     switch (computerAnswer) {
         case "paper":
-            myScoreCounter++;
-            myScore.innerHTML = myScoreCounter;
+            setMyScore();
             break;
         case "rock":
-            computerScoreCounter++;
-            computerScore.innerHTML = computerScoreCounter;
+            setComputerScore();
             break;
     }
 }
@@ -52,12 +58,10 @@ function myRockAnswer() {
     computerChoice.innerHTML = computerAnswer;
     switch (computerAnswer) {
         case "scissors":
-            myScoreCounter++;
-            myScore.innerHTML = myScoreCounter;
+            setMyScore();
             break;
         case "paper":
-            computerScoreCounter++;
-            computerScore.innerHTML = computerScoreCounter;
+            setComputerScore();
             break;
     }
 }
