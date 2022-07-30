@@ -66,6 +66,8 @@ function displayScore() {
 /////// BATTLE //////////////////////////////////////////////////////////////////////
 
 function displayWinner(playerChoice, computerChoice) {
+  //ovdje se moglo se provjeriti playerChoice === computerChoice
+  //tada bi bilo izjednaceno, a krati se kod
   if (playerChoice === "paper" && computerChoice === "paper") {
     status1.innerHTML = "Tie";
   } else if (playerChoice === "rock" && computerChoice === "rock") {
