@@ -24,6 +24,7 @@ h1 {
 .container {
   width: 1200px;
   margin: 0 auto;
+  
 }
 
 .flex {
@@ -64,7 +65,7 @@ h1 {
 }
 
 .content-end {
-  justify-content: flex-end;
+  justify-content:center;
 }
 
 .text-right {
@@ -73,4 +74,14 @@ h1 {
 
 .mt-80 {
   margin-top: 80px;
+}
+
+.rColor{
+  color:rgba(245, 32, 32, 0.658)
+}
+.gColor{
+  color:rgba(15, 211, 41, 0.658)
+}
+.oColor{
+  color:orange;
 }
